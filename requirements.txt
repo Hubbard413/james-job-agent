@@ -1,0 +1,7 @@
+
+streamlit
+openai
+pandas
+pyyaml
+python-docx
+sqlite-utils
