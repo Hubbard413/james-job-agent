@@ -1,4 +1,11 @@
 
 import streamlit as st
-st.title('James Job Agent v2')
-st.write('Dashboard ready for integration')
+import pandas as pd
+
+st.title("James Job Agent")
+
+jobs = pd.read_csv("jobs.csv")
+
+st.metric("Jobs Found", len(jobs))
+
+st.dataframe(jobs)
